@@ -1,0 +1,304 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What We Do</h3>
+                <h1 class="display-2">We’ve got everything you need to secure your business or organisation</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-cloud"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2" style="color:#3fecac">Security Architecture Services</h3>
+                    <p style="color:#3fecac">We offer a complete security architecture as a service to Clients wishing to know whether a current design has
+                      implemented procedures in-line with best security practices, or to ascertain whether your current Infrastructure
+                      requires a further assessment from a security domain specialist. We provide support in ensuring security design patterns
+                      are utilised, perform threat modelling to determine security risks and assess whether the right controls are in placed
+                      within your IT Infrastructure whether Cloud or Data Center based.
+                    </p>
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-clock"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2" style="color:#3fecac">Security Test Management Services</h3>
+                    <p style="color:#3fecac">Security test management is a complete end to end management of various security test procedures ranging from scoping
+                      of penetration tests using our CREST certified penetration testers, undertake ad-hoc or continuous and automatic vulnerability
+                      scanning to meet your compliance needs or undertake piecewise ethical hacking sessions to test your web or API applications. Our
+                      approach is to assess your needs and provide guidance on what method may suit your requirements. We also ensure the process is
+                      managed by us delivering you with key information in terms of business risk.
+                    </p>
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-scales"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2" style="color:#3fecac">Audit, Risk & Compliance</h3>
+                    <p style="color:#3fecac">Pertaining an inventory or understanding what Assets an organisation possesses is often difficult, complex and hard to manage as
+                    part of a standard BAU lifecycle. EHJ & SJ Consultancy are an experienced consultancy that has worked with multiple organisations
+                    to determine the best way to assess and audit organisations to ISO 27001, CIS, Cloud Security Alliance, Cyber Essentials, ISA 62443 and PCI-DSS.
+                    We perform gap analysis reviews on Security governance procedures and work to ensure organisations adopt a governance, risk & compliance processes
+                    in the management of security risks.
+                    </p>
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-cube"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2" style="color:#3fecac">Security DevOps</h3>
+                    <p style="color:#3fecac">Building security into the Software Development Lifecycle (SDL) is pivotal to ensuring vulnerabilities are mitigated from day zero and
+                    that an application conforms to best security practices. We offer services to any business wishing for us to consult on how best to design
+                    your applications whether this is mobile or web-based technology. We also offer a practical implementation on performing SecDevOps using our
+                    preferred approach to implementing security during continuous CI/CD pipeline deployments.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+
+        <div class="intro-wrap">
+
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Case Studies</h3>
+                    <h1 class="display-2 display-2--light">We love what we do, check out some of our latest works</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="{%static 'website/images/portfolio/gallery/Travelex-Logo.png'%}" class="thumb-link" title="Travelex Cloud Security" data-size="1544x440">
+                                    <img src="{% static 'website/images/portfolio/gallery/Travelex-Logo.png' %}"
+                                        
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Travelex Cloud Migration Programme
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Cloud Security & Auditing
+                                </p>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>Working with Travelex Digital Transformation programme, EHJ & SJ Consultancy have been working with the Travelex teams to assess the current security posture of their cloud deployment, ensuring best practices are being adhered to based on a security risk assessing configurations and providing recommendations in the form of providing architecture solutions to ensure compliance with Financial regulations.</p>
+                                <p>Why not further read more about our case study on Cloud Security in our <a href="blog.html">Blogs page</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                        
+                            <div class="item-folio__thumb">
+                                <a href="{% static 'website/images/portfolio/gallery/ofgem.jpg' %}" class="thumb-link" title="iDMobile OFGEM Regulatory Contract Data Project" data-size="1352×625">
+                                 
+                                    
+
+                                         
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Supporting iDMobile Build Security in Google Cloud for an OFGEM Regulated Project
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Cloud Security & Compliance
+                                </p>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>Ensuring compliance with Dixon's CarphoneWarehouse Security Policies and deliverying a solution that would protect financial and personal information was a challenged iDMobile were required to achieve in a tight timescale for regulatory reasons. article. Our Team of Security Architects were on hand to review the approaches taken by iDMobile to ensure the design built security into edge protection
+                                ensuring sufficent logging and monitoring was in place and a centralised distributed Identiy and Access Management system was in place to manage internal access for Operations and Maintenance.</p>
+                                <p>Why not further read more about our case study on Cloud Security and achieving Compliance in our <a href="blog.html">Blogs page</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="{% static 'website/images/portfolio/gallery/OpenBankingProject.jpg' %}" class="thumb-link" title="Santander PSD2" data-size="1500x900">
+                                    <img src="{% static 'website/images/portfolio/gallery/OpenBankingProject.jpg' %}"
+                                         <img src="{% static 'website/images/portfolio/gallery/OpenBankingProject.jpg 1x' %}"
+                                         <img src="{% static 'website/images/portfolio/gallery/open-banking-660x330.png 2x' alt="" %}"
+                                        
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Santander PSD2: Open Banking
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Application Security and SecDevOps
+                                </p>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>As part of the on-going Security process for Tesco Banking, EHJ & SJ Consultancy were drafted in to undertake a threat model exercise to determine the security posture for Tesco Banks legacy Infrastructure. This resulted in providing an End-to-End security risk assessment to allow Tesco Bank to focus on potential areas prone to cybersecurity attacks.</p>
+                                <p>Why not read more about our case study on adopting Web Security Practices in our <a href="blog.html">Blogs page</p>
+
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="{% static 'website/images/portfolio/gallery/Tesco-Bank.jpeg' %}" class="thumb-link" title="Tesco Banking and Clubcard" data-size="950x550">
+                                    <img src="{% static 'website/images/portfolio/gallery/Tesco-Bank.jpeg' %}">
+                                      <img  src="{% static 'website/images/portfolio/gallery/Tesco-Bank.jpeg 1x' %}" alt="">
+                                      <img src= "{% static 'website/images/portfolio/gallery/TescoBank.jpeg 2x' %}"
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Tesco Banking
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Web Security
+                                </p>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>As part of the on-going Security process for Tesco Banking, EHJ & SJ Consultancy were drafted in to undertake a threat model exercise to determine the security posture for Tesco Banks legacy Infrastructure. This resulted in providing an End-to-End security risk assessment to allow Tesco Bank to focus on potential areas prone to cybersecurity attacks.</p>
+                                <p>Why not read more about our case study on adopting Web Security Practices in our <a href="blog.html">Blogs page</p>
+
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="{% static 'website/images/portfolio/gallery/NR-TMS-Future.jpg' %}" class="thumb-link" title="Grow Green" data-size="1440x400">
+                                    <img src="{% static 'website/images/portfolio/gallery/NR-TMS-Future.jpg' %}">
+                                         <img src="{% static 'website/images/portfolio/gallery/NR-TMS-Future.jpg 1x' %}">
+                                        
+                                          <img src="{% static 'website/images/portfolio/gallery/NR-TMS.jpg 2x' %}" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Network Rail: TMS Project
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Infrastructure Security Auditing
+                                </p>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>Ensuring that Security is built into the Software Development Lifecylce and incorporated into the Developers mindset was a challenge we undertook to ensure the various teams at Santander.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="{% static 'website/images/portfolio/gallery/SouthernITT.jpg' %}" class="thumb-link" title="Guitarist" data-size="1200x700">
+                                 
+                                    <img src="{% static 'website/images/portfolio/gallery/SouthernITT.jpg' %}">
+                                        <img src="{% static 'website/images/portfolio/gallery/SouthernITT.jpg 1x' %}">
+                                        <img src="{% static 'website/images/portfolio/gallery/SouthernITT.jpg 2x' %}" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Southern TMS ITT Bid
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Security Architecture Services
+                                </p>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>Working with Stanway Consulting, EHJ & SJ Consultancy were invited to support Southern in their ITT Bid for a new Traffic Management System control centre. EHJ & SJ Consultancy were requested to define non-functional requirements for the invited suppliers of the bid, which involved drafting a Cyber Security strategy.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+
+                             <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="{% static 'website/images/portfolio/gallery/LUL-Digtial.jpg' %}" class="thumb-link" title="Guitarist" data-size="1050x700">
+                                 
+                                    <img src="{% static 'website/images/portfolio/gallery/LUL-Digtial.jpg' %}">
+                                        <img src="{% static 'website/images/portfolio/gallery/LUL-Digtial.jpg 1x' %}">
+                                        <img src="{% static 'website/images/portfolio/gallery/LUL-Digtial.jpg 2x' %}" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    LUL Railway Control Systems
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Security Architecture
+                                </p>
+                            </div>
+
+                            <div class="item-folio__caption">
+                                <p>Our previous involvement with London Underground Ltd was to create and implement a secure PLC system with system monitoring that was secure as part of the Train Describer upgrade programme on the SSL lines. We achieved this providing a fully-fledged TD system with real-time monitoring utilising some best practices taken from ISA 62443 to ensure overall compliance with LUL Security standards.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+{% endblock %}

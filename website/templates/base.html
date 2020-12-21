@@ -1,0 +1,340 @@
+
+
+{%load static%}
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>EHJ & SJ Consultancy</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS {% static 'website/' %}
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/vendor.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/cookie-banner-bottom.css' %}">
+    
+    <style type="text/css" media="screen">
+        .s-styles {
+            background: white;
+            padding-top: 15rem;
+            padding-bottom: 12rem;
+        }
+        .s-styles-tab {
+            background: #081c2d;
+            padding-top: 15rem;
+            padding-bottom: 12rem;
+        }s
+     </style>
+    <!-- script 
+    ================================================== -->
+    <script src="{% static 'website/js/modernizr.js' %}"></script>
+    <script src="{% static 'website/js/pace.min.js' %}"></script>
+
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+    <body id="top">
+
+    <script src="{% static 'website/js/cookie-banner.js' %}"></script>
+    <script src="{% static 'website/js/index.js' %}"></script>
+
+    <script>
+        CookieBanner.init({},
+        function(response){
+            var gaProperty = 'UA-171707196-1';
+
+            if (response.action === "accept") {
+                var obj = response.user_consent;
+                var Cookieresponse = null;
+                Cookieresponse = obj['modal-tab-performance'];
+
+                if(String(Cookieresponse) === "true" || String(Cookieresponse) === "undefined")
+                {
+                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                    ga('create', gaProperty, 'auto');
+                    ga('send', 'pageview');
+                }
+                else if(String(Cookieresponse) === "false")
+                {
+                    var disableStr = 'ga-disable-' + gaProperty;
+                    if (document.cookie.indexOf(disableStr + '=true') > -1) {
+                    window[disableStr] = true;
+                    }
+
+                    // Opt-out function
+                    function gaOptout() {
+                    document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+                    window[disableStr] = true;
+                    } 
+                }
+            } else {
+                console.log("User Rejected.");
+
+                // Disable tracking if the opt-out cookie exists.
+                
+                var disableStr = 'ga-disable-' + gaProperty;
+                if (document.cookie.indexOf(disableStr + '=true') > -1) {
+                window[disableStr] = true;
+                }
+
+                // Opt-out function
+                function gaOptout() {
+                document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+                window[disableStr] = true;
+                } 
+            } 
+        });
+    </script>
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <p></p>
+        <div>
+            <a  class="smoothscroll" href='#home'>
+                <img src="{%static 'website/images/logo-white-2xsmall.png'%}" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+
+                <ul class="header-nav__list">
+
+                    <li class="current"><a class="current"  href="{% url 'home' %}" title="home">Home</a></li>
+                    <li><a  class="current" href="{% url 'aboutus' %}" title="about">About</a></li>
+                    <li><a class="current"  href="services.html" title="services">Services</a></li>
+                    <li><a class="current"  href="{% url 'clients' %}" title="works">Case Studies</a></li>
+                    <li><a class="current"  href="{% url 'clients' %}"  title="clients">Clients</a></li>
+                    <li><a class="current"  href="{% url 'blog:all_blogs' %}" title="blog">Blog</a></li>
+                    <li><a class="current"  href="{% url 'contactus' %}" title="contact">Contact</a></li>
+                    <li><a class="current"  href="privacy.html" title="Privacy">Privacy Policy</a></li>
+                </ul>
+
+                <p>Not sure if you found what you were looking for? Why not ping us an email or follow us on social media to contact us?</p>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://www.linkedin.com/company/ehj-sj-consultancy-ltd"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ehj_sj"><i class="fa fa-twitter"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="{% static 'website/images/TopMainImage.jpeg' %}" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h1>
+                  Demystifying your <br>
+                  Cyber Security <br>
+                  Issues. <br>
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="contactus.html" class="btn btn-outline-success">
+                        Contact Us
+                    </a>
+                    <a href="aboutus.html" class="btn btn-outline-success" >
+                        Who Are We?
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="aboutus.html" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="https://www.linkedin.com/company/ehj-sj-consultancy-ltd"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/ehj_sj"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li>
+        </ul>
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    
+
+   
+{% block content %}
+{% endblock  %}
+
+ <!-- footer
+    ================================================== -->
+    <footer>
+
+      <div class="row footer-main">
+
+          <div class="col-six tab-full left footer-desc">
+              <div class="footer-logo"></div>
+              <p></p>
+              <h4 style="color:#828282;" <p>EHJ & SJ Consultancy are proud to be accredited by the IASME Consortium for achieving Cyber Essentials Registration No: IASME-CE-017466, demonstrating our commitment to not only providing security services but as an organisation we tackle our own security with the same approach as we do for our Clients.</p></h4>
+          </div>
+
+          <div class="col-six tab-full right footer-subscribe">
+              <div class="footer-logo-right"></div>
+              <p></p>
+              <h4 style="color:#828282;" <p>To ensure we meet the higest standards in our Industry sector, we are certified by IASME Registration No: IASME-SA-016593 to have obtained the self-verification of the IASME Governance Standard. This ensures we have an information security maangeemnt system in place including a GDPR management system in place.</p></h4>
+          </div>
+      </div>
+
+      <div class="row footer-main">
+          <div class="col-six tab-full left-b footer-desc">
+              <div class="footer-logo-left-bottom"></div>
+              <p></p>
+              <h4 style="color:#828282;" <p>We are proud to be part of the Crown Commercial Services and are a registered Supplier for the following frameworks, whereby Public Sector Customers can engage with us knowing we are certified by the Governments CCS Framework Standards to be an approved Crown Commercial Supplier.</p></h4>
+          </div>
+
+          <div class="col-six tab-full right-b footer-subscribe">
+              <div class="footer-logo-right-bottom"></div>
+              <p></p>
+              <h4 style="color:#828282;" <p>We are proud to be a member of the Cyber Exchange to ensure we actively engage and obtain the latest news and events within our Sector to stay abreadth of the current trends in Cyber Security and to extend our knowledge network.</p></h4>
+          </div>
+      </div>
+
+    </div> <!-- end footer-main -->
+
+    <div class="row footer-bottom">
+
+        <div class="col-twelve">
+            <div class="col-twelve">
+                
+                <div style="text-align: center;">
+                    <a class="Btn Btn--primary half-width" href="privacy.html">Privacy Policy</a>
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java Script {% static 'website/' %}
+    ================================================== -->
+    <script src="{% static 'website/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'website/js/plugins.js' %}"></script>
+    <script src="{% static 'website/js/main.js' %}"></script>
+
+</body>
+
+</html>

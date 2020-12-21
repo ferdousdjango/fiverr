@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+   <!-- clients
+    ================================================== -->
+    <section id="clients" class="s-clients">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h2 class="subhead"><center>Our Clients</center></h2>
+                <h1 class="display-2"><center>EHJ & SJ Consultancy has been honoured to
+                work with these clients</center></h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="clients">
+
+                    <a href="#0" title="" class="clients__slide"><img src="{% static 'website/images/clients/OpenBanking.png' %}" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="{% static 'website/images/clients/santander-trans.png' %}" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="{% static 'website/images/clients/ThalesLogo.png' %}" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="{% static 'website/images/clients/siemens.png' %}" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="{% static 'website/images/clients/Tesco_Logo.png' %}" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="{% static 'website/images/clients/Tesco-Bank.png' %}" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="{% static 'website/images/clients/tfl.png' %}" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="{% static 'website/images/clients/travelex.png' %}" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="{% static 'website/images/clients/networkrail.png' %}" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="{% static 'website/images/clients/DCG.png' %}" /></a>
+
+                </div> <!-- end clients -->
+            </div> <!-- end col-full -->
+        </div> <!-- end clients-outer -->
+
+        <div class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+                <div class="testimonials">
+
+                    <div class="testimonials__slide">
+
+                        <p>Delivering quality whilst under time constraints is always a pressure, but EHJ & SJ Consultancy managed
+                          to do this whilst proactively promoting security as an organisational wide responsibility. Happy with the relationship
+                          we have with EHJ & SJ Consultancy and would recommend them on their ability to apply Application Security and Security Architecture services.</p>
+
+                        <img src="{% static 'website/images/avatars/santander.png' %}" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Eduardo Martinez Barrios</span>
+                            <span class="testimonials__pos">Santander Payments & Industry Oversight - Open Banking</span>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+
+                        <p>Ensuring security was taken seriously and implemented on a project that had no regard for cybersecurity was attributed to EHJ & SJ Consultancy's
+                          input on the TMS programme. We successfully managed to undertake a full security audit of our supplier's design to part ISO27001 and ISA 62443 and
+                          have the ability to assess the security risks posed to the overall safety profile.</p>
+                            
+                        <img src="{% static 'website/images/avatars/networkrail.png' %}" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Network Rail TMS Programme</span>
+                            <span class="testimonials__pos">Network Rail</span>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+
+                        <p>EHJ & SJ Consultancy provided us with excellent input on how security can be built into a contract and what a security
+                          lifecycle looks like, something that has been missing for many years working on these types of Infrastructure projects.</p>
+
+                        <img src="{% static 'website/images/avatars/stanway.png' %}" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Network Rail: Southern ITT Bid</span>
+                            <span class="testimonials__pos">Stanway Consulting</span>
+                        </div>
+
+                    </div>
+
+                </div><!-- end testimonials -->
+
+            </div> <!-- end col-full -->
+        </div> <!-- end client-testimonials -->
+
+    </section> <!-- end s-clients -->
+{% endblock %}

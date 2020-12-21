@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h2 class="mt-5"style="text-align: center;">Blog</h2>
+<hr>
+<div class="row">
+  {% for blog in blogs %}
+  <div class="col-six tab-full">
+
+                <a href="{% url 'blog:detail' blog.id %}">
+                <h2>{{ blog.title }}</h2>
+                </a>
+
+                <p>
+                  <a href="{% url 'blog:detail' blog.id %}">
+                      <div class="imagecontainer">
+                          <img src="{{ blog.image.url }}" class="imagecon"/>
+
+                          <div class="overlaycon">
+                            <div class="textcon">
+                            Read This Blog in Full</div>
+                          </div>
+                      </div>
+                  </a>
+                </p>
+
+                <p>
+                    <h4>{{ blog.description|striptags|truncatechars:300 }}</h4>
+                </p>
+
+                <div style="text-align: center;">
+                  <a class="Btn Btn--primary half-width"href= "{% url 'blog:detail' blog.id %}">Read This Blog in Full</a>
+                </div>
+
+                <ul class="skill-bars">
+                    <li>
+                    <div class="progress percent85"><span>85%</span></div>
+                    <strong>Digital Transformation</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent60"><span>60%</span></div>
+                    <strong>Cloud Security</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent50"><span>50%</span></div>
+                    <strong>SecDevOps</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>Security Architecture</strong>
+                    </li>
+                </ul>
+            </div>
+
+  
+  {% endfor %}
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+            
